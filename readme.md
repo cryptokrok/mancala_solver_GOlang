@@ -1,6 +1,6 @@
 # mancala
 #### Adversarial search on the traditional game of Mancala
-[![Build Status](https://travis-ci.org/kNoAPP/mancala.svg?branch=master)](https://travis-ci.org/kNoAPP/mancala)
+[![Build Status](https://travis-ci.com/kNoAPP/mancala.svg?branch=master)](https://travis-ci.com/kNoAPP/mancala)
 
 This project has two components. The first is a `mancala_solver` Go package designed for traversing Mancala's 
 Min-Max decision tree. The second is a command-line driver `main` Go package to demo the solver.
