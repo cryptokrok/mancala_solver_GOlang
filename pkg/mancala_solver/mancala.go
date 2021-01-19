@@ -7,7 +7,7 @@ import (
 )
 
 type MancalaState struct {
-	Board [14]uint8
+	Board      [14]uint8
 	AlliedTurn bool
 }
 
@@ -33,14 +33,14 @@ func CalculateMove(state MancalaState, depth uint8) (alliedScore float32, advers
 	var bestMoves *list.List
 	bestAllied, bestAdversary, bestMove := float32(0), float32(0), uint8(0)
 	for i := uint8(0); i < 6; i++ {
-		if state.Board[i] == 0 {
+		if state.Board[base+i] == 0 {
 			continue
 		}
 
-		thisState, _ := AdvanceState(state, base + i)
+		thisState, _ := AdvanceState(state, base+i)
 		// Errors won't happen here since this is a controlled environment.
 
-		thisAllied, thisAdversary, thisMoves := CalculateMove(thisState, depth - 1)
+		thisAllied, thisAdversary, thisMoves := CalculateMove(thisState, depth-1)
 		if state.AlliedTurn {
 			if thisAllied > bestAllied {
 				bestAllied = thisAllied
@@ -105,11 +105,11 @@ func AdvanceState(state MancalaState, moveIndex uint8) (nextState MancalaState, 
 }
 
 func (state *MancalaState) PrintBoard() {
-	for i := 13; i>6; i-- {
+	for i := 13; i > 6; i-- {
 		fmt.Print(state.Board[i], " ")
 	}
 	fmt.Print("\n  ")
-	for i := 0; i<7; i++ {
+	for i := 0; i < 7; i++ {
 		fmt.Print(state.Board[i], " ")
 	}
 	fmt.Print("\n")
