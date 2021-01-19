@@ -7,12 +7,22 @@ Min-Max decision tree. The second is a command-line driver `main` Go package to 
 
 Depth of search, state of the Mancala board, and legal action steps are provided in the solver package.
 
-
+## Using the Driver
 *An image of the Mancala driver finding optimal moves*
 ![](https://i.imgur.com/ydFsb5I.png "Mancala Driver")
+The driver can be used to test the `mancala_solver` package. Simply run the compiled binary in a terminal. When you
+first start the program, you'll be given a help menu. Use this as a guide. Next, enter a search depth. I've found 10
+works both fast and well.
+
+*Each slot has a number identifying it*
+![](https://i.imgur.com/2Y9J7m2.jpg "Mancala Slots")
+Valid moves consist of typing a number corresponding to an ally or adversary side. Then once typed, the scope is 
+re-evaluated and new optimal moves are posted. The driver will also predict an ally/adversary score it believes it'll 
+achieve. You'll be re-asked for moves if you provide invalid ones.
 
 *Winning the game after playing optimally*
 ![](https://i.imgur.com/FDhi0I6.png "Mancala Finish")
+You can use this program to an edge on your opponents or practice optimal play. Good show!
 
 ## Installation
 This project uses Go to compile its source code. You can [get Go at their website](https://golang.org/dl/).
