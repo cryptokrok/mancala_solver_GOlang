@@ -70,6 +70,10 @@ fabric.properties
 # Android studio 3.1+ serialized cache file
 .idea/caches/build_file_checksums.ser
 
+# Cache
+*.swp
+.idea/modules.xml
+.idea/mancala.iml
 
 # Go Ignore
 # Yoinked from: https://github.com/fatedier/frp/blob/dev/.gitignore
@@ -140,6 +144,3 @@ release/
 test/bin/
 vendor/
 dist/
-
-# Cache
-*.swp
