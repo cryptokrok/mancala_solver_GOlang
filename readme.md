@@ -28,7 +28,7 @@ You can use this program to an edge on your opponents or practice optimal play. 
 This project uses Go to compile its source code. You can [get Go at their website](https://golang.org/dl/).
 
 With Go installed, clone this repository to your [GOPATH](https://golang.org/cmd/go/#hdr-GOPATH_environment_variable) 
-workspace. By default, this is usually your user's home folder.
+workspace. By default, this is usually your user home folder at `$HOME/go` on Unix and `%USERPROFILE%\go` on Windows.
 
 ```
 git clone https://github.com/kNoAPP/mancala.git
