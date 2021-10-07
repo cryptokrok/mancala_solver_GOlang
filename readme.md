@@ -41,7 +41,7 @@ go build
 ```
 
 A binary should be dropped in either the `Mancala` folder or your workspace's `bin/Mancala` folder. Run this binary
-with `./mancala` if on Linux or `mancala` or `mancala.exe` if on Windows.
+with `./mancala` if you're running on Linux/Windows Powershell. Run `mancala`or `mancala.exe` if on Windows Command Prompt.
 
 ## As a Go Package
 You can also directly import this project to your own Go projects! Run the following inside your project folder.
